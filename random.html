@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Лос-Анджелес: город мечты</title>
+		<style>
+			body {
+	background-color: white;
+	color: black;
+	font-size: 15px;
+	font-family: 'Courier New', monospace;
+	margin: 0;
+	padding: 0;
+}
+header {
+	background: linear-gradient(90deg, rgba(255, 0, 47), rgba(255, 0, 94));
+	padding: 20px;
+	text-align: center;
+	color: white;
+}
+footer {
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(90deg, rgba(255, 38, 38),  rgba(0, 238, 255));
+	padding: 5px;
+	color: white;
+}
+.text {
+	color: black;
+	text-align: center;
+	opacity: 0;
+	transform: translateY(-50px);
+	animation: appear 2s forwards; 
+}
+img {
+	width: 250px;
+	border-radius: 15px;
+	opacity: 0;
+	transform: translateY(-50px);
+	animation: appear 2s forwards; 
+}
+.l {
+    list-style-type: upper-roman;
+    
+}
+@keyframes appear {
+	from {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.container {
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+a {
+	color: green;
+}
+button {
+            	background-color: skyblue;
+            	border: none;
+            	height: 45px;
+            	width: 150px;
+            }
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Лос-Анджелес: город мечты</h1>
+			<p>Проект от:<em>Митрофанова Марка и Исупова Таира</em>, сайт от: <em>Хуснутдинова Нияза</em></p>
+		</header>
+		<div class="text">
+		    <div class="container">
+		    	<h2>План сайта</h2>
+		    	<a href="index.html">Главная страница</a><br>
+		    	<a href="random.html">Рандомныe факты про Лос-Анджелес</a><br>
+		    	<a href="i.html">Создатели проекта и сайта</a>
+		    </div>
+		    <h2>Рандомныe факты про Лос-Анджелес</h2>
+		    <div class="container">
+		    	<h3>Рандомныe факты про Лос-Анджелес</h3>
+		    	<button onclick="r()">Узнать</button>
+		    	<p id="rf"></p>
+		    </div>
+		</div>
+		<br><br><br><br><br>
+		<footer>
+			<p>&copy Проект: Митрофанов Марк, Исупов Таир. Сайт: Хуснутдинов Нияз. 9 лицей им. А.С.Пушкина. Зеленодольск 2026</p>
+		</footer>
+		<script>
+			function r() {
+	let rf = [
+		'Запрет на снежки: В городе Манхэттен-Бич, входящем в агломерацию LA, формально действовал закон, запрещающий бросать снежки в общественных местах без разрешения полиции. (Этот закон часто упоминается как пример странного законодательства).',
+		'Длиннейшее название: При основании в 1781 году город получил название "El Pueblo de Nuestra Señora la Reina de los Ángeles del Río de Porciúncula", что переводится как «Поселение Нашей Госпожи Королевы Ангелов реки Порсиункула». К счастью, со временем его сократили до LA.',
+		'Табличка "HOLLYWOOD" была рекламой: Знаменитая голливудская вывеска была установлена в 1923 году как временная рекламная конструкция для нового жилого комплекса "Hollywoodland". Слово "Land" убрали в 1949 году, и табличка стала официальным символом района.',
+		'Лос-Анджелес не всегда был американским: До 1848 года город, как и вся Калифорния, был частью Мексики. Многие улицы и районы до сих пор носят испанские названия.',
+		'Первая в мире киностудия: Компания Nestor Studios, открытая в 1911 году, стала первой полноценной киностудией в Голливуде. Это положило начало массовому переезду кинематографистов из Нью-Йорка в солнечную Калифорнию.',
+		'Аллея славы — это не тротуар: Звезды на Аллее славы — это не просто рисунки на асфальте. Каждая звезда — это бронзовая плита, вмонтированная в террацовый квадрат. За всю историю было установлено более 2700 звезд.',
+		'Город в пустыне: Лос-Анджелес построен в пустынной местности, и вся его зелень — результат искусственного орошения. Город ежегодно потребляет огромное количество воды, привозимой из других регионов Калифорнии.',
+		'Горы посреди города: В черте Лос-Анджелеса находится горный хребет — горы Санта-Моника. Самая высокая точка, гора Лукс, достигает 950 метров. Это единственный крупный город в США, где горный хребет отделяет основную часть города от побережья.',
+		'Официальное дерево: Официальным деревом Лос-Анджелеса является коралловое дерево (Coral Tree), которое не является родным для Калифорнии, но красиво цветет и украшает улицы города.',
+		"Родина French Dip: Сэндвич 'French Dip' (с мясом, обмакнутым в мясной сок) был изобретен в Лос-Анджелесе в начале XX века в ресторане Philippe's или Cole's (оба до сих пор спорят, кто первый)."
+    ];
+    let randomI = Math.floor(Math.random() * rf.length);
+    document.getElementById('rf').innerHTML = rf[randomI];
+}
+
+		</script>
+	</body>
+</html>

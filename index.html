@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Лос-Анджелес: город мечты</title>
+		<style>
+			body {
+	background-color: white;
+	color: black;
+	font-size: 15px;
+	font-family: 'Courier New', monospace;
+	margin: 0;
+	padding: 0;
+}
+header {
+	background: linear-gradient(90deg, rgba(255, 0, 47), rgba(255, 0, 94));
+	padding: 20px;
+	text-align: center;
+	color: white;
+}
+footer {
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(90deg, rgba(255, 38, 38),  rgba(0, 238, 255));
+	padding: 5px;
+	color: white;
+}
+.text {
+	color: black;
+	text-align: center;
+	opacity: 0;
+	transform: translateY(-50px);
+	animation: appear 2s forwards; 
+}
+img {
+	width: 250px;
+	border-radius: 15px;
+	opacity: 0;
+	transform: translateY(-50px);
+	animation: appear 2s forwards; 
+}
+.l {
+    list-style-type: upper-roman;
+    
+}
+@keyframes appear {
+	from {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.container {
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+a {
+	color: green;
+}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Лос-Анджелес: город мечты</h1>
+			<p>Проект от:<em>Митрофанова Марка и Исупова Таира</em>, сайт от: <em>Хуснутдинова Нияза</em></p>
+		</header>
+		<div class="text">
+			<h2>Проект: „Лос-Анджелес: город мечты“</h2>
+			<img src="https://i.pinimg.com/originals/b7/77/16/b7771639ee533b7142bb94fb4c03363f.jpg">
+		    <div class="container">
+		    	<h2>План сайта</h2>
+		    	<a href="index.html">Главная страница</a><br>
+		    	<a href="random.html">Рандомныe факты про Лос-Анджелес</a><br>
+		    	<a href="i.html">Создатели проекта и сайта</a>
+		    </div>
+		    <h3>С помощью нашего проекта вы сможете:</h3>
+		    <ul class="l">
+		    	<li>Узнать много чего нового про Лос-Анджелес</li>
+		    	<li>Посмотреть на фотки Лос-Анджелеса</li>
+		    	<li>Узнать чем знаменит Лос-Анджелес</li>
+		    </ul>
+		    <strong><h4>И многое другое	!</h4></strong>
+
+		</div>
+		<br><br><br><br><br>
+		<footer>
+			<p>&copy Проект: Митрофанов Марк, Исупов Таир. Сайт: Хуснутдинов Нияз. 9 лицей им. А.С.Пушкина. Зеленодольск 2026</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
